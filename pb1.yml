@@ -1,0 +1,8 @@
+---
+  - name: playbook install nano
+    hosts: testservers
+    tasks:
+      - name: install nano in servers in testservers
+        yum:
+          name: nano
+          state: latest
